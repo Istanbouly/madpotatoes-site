@@ -110,7 +110,7 @@
 <header class="mb-auto sticky-top">
   <div class="container-fluid d-flex align-items-center px-0">
     <h3 class="mb-0 me-auto">
-      <img id="logo-header" src="assets/images/logo.png" alt="">
+      <img id="logo-header" src="assets/images/logo.png" alt="Logo picture" class="d-none d-md-block">
     </h3>
     <div class="d-flex flex-grow-1 justify-content-center">
       <nav class="nav nav-masthead">
@@ -150,47 +150,50 @@
 
 
 <section id="featured-items" class="w-100 d-block text-center py-3 bg-light">
-  <div id="multiItemCarousel" class="carousel slide container" data-bs-ride="carousel">
-    <h2 class="text-dark m-5">Check out our fetured items..</h2>
+  <h2 class="text-dark m-5">Check out our featured items..</h2>
+
+  <!-- DESKTOP Carousel (3 items per slide) -->
+  <div id="desktopCarousel" class="carousel slide container d-none d-md-block" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row">
-          <div class="col-4">
-            <img src="assets/images/kumpir1.jpg" class="d-block w-100" alt="Image 1">
+          <div class="col-md-4">
+            <img src="assets/images/mexican-kumpir.jpg" class="d-block w-100" alt="Image 1">
             <div class="carousel-caption-custom">
               <h5>Mexican Kumpir</h5>
             </div>
           </div>
-          <div class="col-4">
-            <img src="assets/images/kumpir2.jpg" class="d-block w-100" alt="Image 2">
+          <div class="col-md-4">
+            <img src="assets/images/vegetarian-kumpir.jpg" class="d-block w-100" alt="Image 2">
             <div class="carousel-caption-custom">
               <h5>Vegetarian Delight Kumpir</h5>
             </div>
           </div>
-          <div class="col-4">
-            <img src="assets/images/kumpir3.jpg" class="d-block w-100" alt="Image 3">
+          <div class="col-md-4">
+            <img src="assets/images/classic-kumpir.jpg" class="d-block w-100" alt="Image 3">
             <div class="carousel-caption-custom">
-              <h5>Classic Turkish Kumpair</h5>
+              <h5>Classic Turkish Kumpir</h5>
             </div>
           </div>
         </div>
       </div>
+
       <div class="carousel-item">
         <div class="row">
-          <div class="col-4">
-            <img src="assets/images/kumpir2.jpg" class="d-block w-100" alt="Image 4">
+          <div class="col-md-4">
+            <img src="assets/images/mediterranean-kumpir.jpg" class="d-block w-100" alt="Image 4">
             <div class="carousel-caption-custom">
               <h5>Mediterranean Kumpir</h5>
             </div>
           </div>
-          <div class="col-4">
-            <img src="assets/images/kumpir1.jpg" class="d-block w-100" alt="Image 5">
+          <div class="col-md-4">
+            <img src="assets/images/chicken-kumpir.jpg" class="d-block w-100" alt="Image 5">
             <div class="carousel-caption-custom">
               <h5>Chicken Kumpir</h5>
             </div>
           </div>
-          <div class="col-4">
-            <img src="assets/images/kumpir3.jpg" class="d-block w-100" alt="Image 1 Again">
+          <div class="col-md-4">
+            <img src="assets/images/beef-kumpir.jpg" class="d-block w-100" alt="Image 6">
             <div class="carousel-caption-custom">
               <h5>Beef & Cheddar Kumpir</h5>
             </div>
@@ -199,27 +202,77 @@
       </div>
     </div>
 
-    <!-- Carousel Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#desktopCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#desktopCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+  </div>
 
+  <!-- MOBILE Carousel (1 item per slide) -->
+  <div id="mobileCarousel" class="carousel slide container d-block d-md-none" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/images/kumpir1.jpg" class="d-block w-100" alt="Image 1">
+        <div class="carousel-caption-custom text-center">
+          <h5>Mexican Kumpir</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/kumpir2.jpg" class="d-block w-100" alt="Image 2">
+        <div class="carousel-caption-custom text-center">
+          <h5>Vegetarian Delight Kumpir</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/kumpir3.jpg" class="d-block w-100" alt="Image 3">
+        <div class="carousel-caption-custom text-center">
+          <h5>Classic Turkish Kumpir</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/kumpir2.jpg" class="d-block w-100" alt="Image 4">
+        <div class="carousel-caption-custom text-center">
+          <h5>Mediterranean Kumpir</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/kumpir1.jpg" class="d-block w-100" alt="Image 5">
+        <div class="carousel-caption-custom text-center">
+          <h5>Chicken Kumpir</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/images/kumpir3.jpg" class="d-block w-100" alt="Image 6">
+        <div class="carousel-caption-custom text-center">
+          <h5>Beef & Cheddar Kumpir</h5>
+        </div>
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#mobileCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mobileCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </section>
 
 
+
 <!-- events section -->
 
-<section id="testimonials" class="w-100 text-center py-5 bg-light">
+<!-- <section id="testimonials" class="w-100 text-center py-5 bg-light">
   <div class="container">
     <h2 class="mb-5 text-dark">What Our Customers Say</h2>
     <div class="row">
-      <!-- Testimonial 1 -->
+
       <div class="col-md-4 mb-4">
         <div class="card shadow-sm">
           <img src="assets/images/testimonial 1.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="John Doe" style="width: 80px; height: 80px; object-fit: cover;">
@@ -230,7 +283,7 @@
         </div>
       </div>
 
-      <!-- Testimonial 2 -->
+
       <div class="col-md-4 mb-4">
         <div class="card shadow-sm">
           <img src="assets/images/testimonial 2.webp" class="card-img-top rounded-circle mx-auto mt-4" alt="Jane Smith" style="width: 80px; height: 80px; object-fit: cover;">
@@ -241,7 +294,7 @@
         </div>
       </div>
 
-      <!-- Testimonial 3 -->
+
       <div class="col-md-4 mb-4">
         <div class="card shadow-sm">
           <img src="assets/images/testimonial 3.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Mark Lee" style="width: 80px; height: 80px; object-fit: cover;">
@@ -253,7 +306,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <!-- Our location -->
@@ -279,22 +332,30 @@
 
 <section id="contact-us" class="w-100 text-center py-5">
   <div class="container">
-    <h2 class="text-dark">Contact Us</h2>
+    <h2 class="text-dark">Contact us | Book us for your event.</h2>
     <p class="text-dark">Have a question? Get in touch with us!</p>
-    <form action="#" method="post">
+
+    <form action="https://formsubmit.co/customer-support@madpotatoes.com" method="POST">
       <div class="mb-3">
-        <input type="text" class="form-control" placeholder="Your Name" required>
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
       </div>
       <div class="mb-3">
-        <input type="email" class="form-control" placeholder="Your Email" required>
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
       </div>
       <div class="mb-3">
-        <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+        <textarea name="message" class="form-control" rows="3" placeholder="Your Message" required></textarea>
       </div>
+
+      <!-- Optional: Formsubmit settings -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_next" value="https://madpotatoes.com/thanks.html">
+
       <button type="submit" id="contact-btn" class="btn btn-primary">Send Message</button>
     </form>
   </div>
 </section>
+
 
 
 

@@ -3,6 +3,7 @@
 	display: flex;
 	justify-content: center;
 	background-color: transparent;
+	margin-top : 25px;
 }
 
 header .header-line {
@@ -286,6 +287,135 @@ header .header-line {
 	justify-content: space-around;
 }
 
+
+
+
+/* Responsive tweaks for small screens */
+@media (max-width: 1024px) {
+  /* Header logo hide on small screens */
+  #logo-header {
+    display: none !important;
+  }
+
+  /* Header nav alignment */
+  header .container-fluid {
+    justify-content: space-between;
+  }
+  .nav-masthead {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-end;
+  }
+  .nav-masthead .nav-link {
+    padding: 0.5rem 0.75rem;
+    white-space: nowrap;
+  }
+
+  /* Menu container stacking */
+  .d-flex.container.gap-5.py-5 {
+    flex-direction: column !important;
+  }
+
+  /* Left and right panel full width */
+  .col-md-8, .col-md-4 {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* Sections become full width with margin bottom */
+  #kumpairs, #proteins, #corn-cups, #add-ons, #sauces, #beverages {
+    height: auto !important;
+    margin-bottom: 40px;
+  }
+
+  /* First and second column stack vertically */
+  .first-column, .second-column {
+    width: 100% !important;
+/*    padding-left: 0 !important;
+    padding-right: 0 !important;*/
+    padding : 10px !important;
+    margin-left: 0 !important;
+  }
+
+  /* Section headers reposition */
+  .section-header {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+
+  /* Menu items spacing adjustment */
+  .menu-item {
+    margin: 20px 0 !important;
+  }
+
+  /* Protein options stacked vertically */
+  .protein-options {
+    flex-direction: column;
+  }
+  .protein {
+    width: 100% !important;
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
+
+  /* Corn chips images smaller and stacked */
+  .corn-chips {
+    flex-direction: column;
+    align-items: center;
+  }
+  .corn-chips img {
+    width: 120px !important;
+    margin: 10px 0 !important;
+  }
+  #corn-chips-img {
+    margin-left: 0 !important;
+  }
+
+  /* Add-ons & Beverages section fix */
+  #add-ons, #beverages {
+    height: auto !important;
+    padding: 20px 10px !important;
+  }
+
+  .ingredients {
+	width: 60% !important;
+	/*	border: 1px solid red;*/
+	}
+
+  /* Add-on lines and prices full width */
+  .add-on-line {
+    width: 60% !important;
+  }
+  .add-on-price {
+    width: auto !important;
+    margin-right: 10px !important;
+  }
+
+  /* Sauces options stacked */
+  .sauces-options {
+    flex-direction: column;
+    margin-top:50px;
+  }
+  .sauces-options p {
+    margin: 0;
+  }
+
+  /* General padding fixes */
+  .container.text-center, #menuheader {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .price {
+		padding-left : 10px;
+		font-weight: bold;
+		color : #D47831;
+		font-size : 11pt;
+	}
+
+}
 
 
 
