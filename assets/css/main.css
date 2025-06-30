@@ -140,4 +140,20 @@ main {
 }
 
 
+
+/* Responsive tweaks for small screens */
+@media (max-width: 1024px) {
+  /* Header logo hide on small screens */
+  #thebanner {
+    min-height: 800px;
+  }
+}
+
+
+@media (max-width: 420px) {
+  /* Header logo hide on small screens */
+ 	nav a {
+ 		font-size : 0.8rem !important;
+ 	}
+}
  
