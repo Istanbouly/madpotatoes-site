@@ -335,7 +335,9 @@
     <h2 class="text-dark">Contact us | Book us for your event.</h2>
     <p class="text-dark">Have a question? Get in touch with us!</p>
 
-    <form action="https://formsubmit.co/customer-support@madpotatoes.com" method="POST">
+    <form method="POST" id="contact-form">
+      <!-- Form is currently disabled -->
+
       <div class="mb-3">
         <input type="text" name="name" class="form-control" placeholder="Your Name" required>
       </div>
@@ -346,15 +348,11 @@
         <textarea name="message" class="form-control" rows="3" placeholder="Your Message" required></textarea>
       </div>
 
-      <!-- Optional: Formsubmit settings -->
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="box">
-      <input type="hidden" name="_next" value="https://madpotatoes.com/thanks.html">
-
-      <button type="submit" id="contact-btn" class="btn btn-primary">Send Message</button>
+      <button type="submit" id="contact-btn" class="btn btn-secondary" disabled>Send Message</button>
     </form>
   </div>
 </section>
+
 
 
 
